@@ -16,14 +16,10 @@ interface IState {
  * It renders title, button and Graph react element.
  */
 class App extends Component<{}, IState> {
-  constructor(props: {}) {
-    super(props);
-
-    this.state = {
       // data saves the server responds.
       // We use this state to parse data down to the child element (Graph) as element property
       data: [],
-      showGraph: false
+      showGraph: false,
     };
   }
 
